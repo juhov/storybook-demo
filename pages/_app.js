@@ -1,5 +1,6 @@
 import App, { Container } from "next/app";
 import ThemeProviderWithGlobalStyles from "../theme/Provider";
+import { Header } from "guild-js-theme";
 
 export default class BBApp extends App {
   render() {
@@ -7,6 +8,7 @@ export default class BBApp extends App {
     return (
       <Container>
         <ThemeProviderWithGlobalStyles>
+          <Header title="#guild-js-dev ❤" />
           <Component {...pageProps} />
         </ThemeProviderWithGlobalStyles>
       </Container>

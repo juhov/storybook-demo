@@ -7,7 +7,6 @@ const GlobalStyles = createGlobalStyle`
     text-size-adjust: 100%;
     overflow-x: hidden;
   }
-
 `;
 
 export default GlobalStyles;

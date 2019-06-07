@@ -1,12 +1,24 @@
+import {
+  List,
+  Heading,
+  CardNormal,
+  PageContainer,
+  PageContainerBreakOut
+} from "guild-js-theme";
+
 const fakeItems = new Array(10).fill();
 
 export default () => (
-  <div>
-    <h1>Storybook Example</h1>
-    <ul>
+  <PageContainer>
+    <Heading color={["breakerBay", "burntSienna"]}>Latest news</Heading>
+    <PageContainerBreakOut as={List} py="1">
       {fakeItems.map((item, i) => (
-        <li>Title {i}</li>
+        <CardNormal
+          image={`http://lorempixel.com/300/170?${i}`}
+          title={`Card ${i}`}
+          subtitle="Subtitle"
+        />
       ))}
-    </ul>
-  </div>
+    </PageContainerBreakOut>
+  </PageContainer>
 );

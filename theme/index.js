@@ -12,4 +12,4 @@ export { default as CardNormal } from "./components/CardNormal";
 export { default as CardFlat } from "./components/CardFlat";
 export { default as List } from "./components/List";
 export { default as Header } from "./components/Header";
-export { default as PageContainer } from "./layout/PageContainer";
+export { PageContainer, PageContainerBreakOut } from "./layout/PageContainer";

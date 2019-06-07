@@ -60,6 +60,9 @@ const space = {
   2: "40px",
   3: "80px"
 };
+space.layout = {
+  vertical: [space[1], space[2], space[3]]
+};
 
 export default {
   baseFontSize,

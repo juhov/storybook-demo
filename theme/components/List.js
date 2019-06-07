@@ -12,6 +12,9 @@ const List = styled(Flex)`
   > * {
     flex: 0 0 ${props => props.itemWidth || "18em"};
     margin-right: ${themeGet("space.1")};
+    @media screen and (min-width: ${themeGet(`breakpoints.1`)}) {
+      margin-right: ${themeGet("space.2")};
+    }
   }
 `;
 
