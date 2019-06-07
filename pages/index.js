@@ -14,6 +14,7 @@ export default () => (
     <PageContainerBreakOut as={List} py="1">
       {fakeItems.map((item, i) => (
         <CardNormal
+          key={`card-${i}`}
           image={`http://lorempixel.com/300/170?${i}`}
           title={`Card ${i}`}
           subtitle="Subtitle"

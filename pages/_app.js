@@ -2,7 +2,7 @@ import App, { Container } from "next/app";
 import ThemeProviderWithGlobalStyles from "../theme/Provider";
 import { Header } from "guild-js-theme";
 
-export default class BBApp extends App {
+export default class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
