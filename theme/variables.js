@@ -62,6 +62,7 @@ const space = {
 };
 
 export default {
+  baseFontSize,
   breakpoints,
   radii,
   space,
@@ -76,8 +77,8 @@ export default {
       borderRadius: radii.large,
       boxShadow: shadows.large,
       transition: "box-shadow 300ms, transform 300ms",
-      "&.has-link:hover": {
-        transform: "translateY(-5px)",
+      "&:hover": {
+        transform: "translateY(5px)",
         boxShadow: shadows.small
       }
     },
@@ -91,7 +92,9 @@ export default {
     default: {
       backgroundColor: colors.secondary,
       borderRadius: radii.small,
+      boxShadow: shadows.small,
       color: colors.greenWhite,
+      padding: space[1],
       ":visited": {
         color: colors.greenWhite
       },
@@ -99,13 +102,15 @@ export default {
         backgroundColor: darken(0.05, colors.secondary)
       },
       ":disabled": {
-        backgroundColor: colors.shadowGreen
+        opacity: 0.5
       }
     },
     primary: {
       backgroundColor: colors.primary,
       borderRadius: radii.small,
+      boxShadow: shadows.small,
       color: colors.greenWhite,
+      padding: space[1],
       ":visited": {
         color: colors.greenWhite
       },
@@ -113,7 +118,7 @@ export default {
         backgroundColor: darken(0.05, colors.primary)
       },
       ":disabled": {
-        backgroundColor: colors.shadowGreen
+        opacity: 0.5
       }
     }
   }

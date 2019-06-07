@@ -2,7 +2,6 @@ import { Button as _Button } from "rebass";
 import { styled } from "guild-js-theme";
 
 const Button = styled(_Button)`
-  ${textStyle};
   border: none;
   display: inline-flex;
   justify-content: center;

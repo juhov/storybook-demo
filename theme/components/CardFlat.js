@@ -1,10 +1,6 @@
 import React from "react";
-import { Box, Card as _Card, Text, styled } from "guild-js-theme";
+import { Flex, Box, Card, Text, styled } from "guild-js-theme";
 import { intrinsicRatio } from "guild-js-theme/styled-system-utils/intrinsicRatio";
-
-const Card = styled(_Card)`
-  overflow: hidden;
-`;
 
 const ImageWrapper = styled(Box)`
   ${intrinsicRatio};
@@ -12,14 +8,20 @@ const ImageWrapper = styled(Box)`
 
 export default ({ image, title, subtitle, ...rest }) => {
   return (
-    <Card variant="default" {...rest}>
+    <Card
+      as={Flex}
+      justifyContent="flex-start"
+      variant="flat"
+      {...rest}
+      style={{ overflow: "hidden" }}
+    >
       {image && (
-        <ImageWrapper
-          intrinsicRatio={{ width: 300, height: 170 }}
+        <Card
+          flex="0 1 30%"
           backgroundColor="greenWhite"
-        >
-          <img src={image} />
-        </ImageWrapper>
+          backgroundImage={`url(${image})`}
+          backgroundSize="cover"
+        />
       )}
       <Box p={1}>
         <Text as="h2" fontSize={3} m={0} fontWeight="500">
@@ -31,7 +33,7 @@ export default ({ image, title, subtitle, ...rest }) => {
             fontSize={2}
             mt="0.1em"
             fontWeight="400"
-            color="breakerBay"
+            color="burntSienna"
             m={0}
           >
             {subtitle}
