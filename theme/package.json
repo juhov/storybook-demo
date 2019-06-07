@@ -2,10 +2,5 @@
   "name": "guild-js-theme",
   "version": "1.0.0",
   "private": true,
-  "sideEffects": false,
-  "dependencies": {
-    "polished": "^3.4.0",
-    "rebass": "^3.1.1",
-    "styled-components": "^4.3.0"
-  }
+  "sideEffects": false
 }

@@ -3,14 +3,14 @@ import React from "react";
 import { Flex, Box, CardNormal, CardFlat, Heading } from "guild-js-theme";
 
 export default () => (
-  <Flex>
+  <Flex m={2}>
     <Box mr={2}>
       <Heading mb={1}>Normal</Heading>
       <CardNormal
         width="300px"
         image="http://lorempixel.com/300/170"
-        title="asdf"
-        subtitle="asdf"
+        title="Title"
+        subtitle="Subtitle"
       />
     </Box>
     <Box>
@@ -18,8 +18,8 @@ export default () => (
       <CardFlat
         width="300px"
         image="http://lorempixel.com/200/200/people"
-        title="asdf"
-        subtitle="asdf"
+        title="Title"
+        subtitle="Subtitle"
       />
     </Box>
   </Flex>

@@ -1,9 +1,9 @@
 import React from "react";
 
-import { Flex, Button } from "guild-js-theme";
+import { Flex, Box, Button } from "guild-js-theme";
 
 export default () => (
-  <>
+  <Box m={2}>
     <Flex mb={1}>
       <Button mr={1}>Default</Button>
       <Button mr={1} as="a">
@@ -24,5 +24,5 @@ export default () => (
         Primary
       </Button>
     </Flex>
-  </>
+  </Box>
 );

@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "guild-js-theme": "file:theme",
-    "next": "^8.1.0",
+    "next": "^8.1.1-canary.47",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "polished": "^3.4.0",
+    "rebass": "^3.1.1",
+    "styled-components": "^4.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",

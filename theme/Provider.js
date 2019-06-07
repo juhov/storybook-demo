@@ -1,6 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import variables from "guild-js-theme/variables";
+import variables from "./variables";
 import GlobalStyles from "./GlobalStyles";
 
 const ThemeProviderWithGlobalStyles = ({ children }) => {
