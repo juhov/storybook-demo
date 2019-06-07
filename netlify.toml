@@ -1,7 +1,7 @@
 # example netlify.toml
 [build]
-  command = "npm run export"
-  publish = "out"
+  command = "npm run buid-storybook"
+  publish = "storybook-static"
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app. 
   ## Not needed for static site generators.
