@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "guild-js-theme": "file:theme",
-    "next": "^8.1.1-canary.47",
+    "next": "^13.0.4",
     "next-transpile-modules": "^2.3.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
@@ -22,7 +22,7 @@
     "@storybook/addon-actions": "^5.1.1",
     "@storybook/addon-links": "^5.1.1",
     "@storybook/addons": "^5.1.1",
-    "@storybook/react": "^5.1.1",
+    "@storybook/react": "^6.5.13",
     "babel-loader": "^8.0.5",
     "babel-plugin-styled-components": "^1.10.0"
   }
